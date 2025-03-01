@@ -1,0 +1,766 @@
+19:28:26 **** Rebuild of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c:5:30: warning: 'struct student' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | void addStudent(const struct student *const ptr);
+      |                              ^~~~~~~
+..\project1.c: In function 'main':
+..\project1.c:69:36: error: passing argument 1 of 'addStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 |                         addStudent(&stud);
+      |                                    ^~~~~
+      |                                    |
+      |                                    struct student *
+..\project1.c:5:45: note: expected 'const struct student * const' but argument is of type 'struct student *'
+    5 | void addStudent(const struct student *const ptr);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+..\project1.c: At top level:
+..\project1.c:96:6: error: conflicting types for 'addStudent'; have 'void(const struct student * const)'
+   96 | void addStudent(const struct student *const ptr){
+      |      ^~~~~~~~~~
+..\project1.c:5:6: note: previous declaration of 'addStudent' with type 'void(const struct student * const)'
+    5 | void addStudent(const struct student *const ptr);
+      |      ^~~~~~~~~~
+
+19:28:26 Build Failed. 2 errors, 1 warnings. (took 288ms)
+
+19:32:22 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c:5:30: warning: 'struct student' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | void addStudent(const struct student *const ptr);
+      |                              ^~~~~~~
+..\project1.c: In function 'main':
+..\project1.c:64:29: error: 'stud' is a pointer; did you mean to use '->'?
+   64 |                         stud.id = id;
+      |                             ^
+      |                             ->
+..\project1.c:65:36: error: 'stud' is a pointer; did you mean to use '->'?
+   65 |                         strcpy(stud.name, name);
+      |                                    ^
+      |                                    ->
+..\project1.c:66:29: error: 'stud' is a pointer; did you mean to use '->'?
+   66 |                         stud.age = age;
+      |                             ^
+      |                             ->
+..\project1.c:67:29: error: 'stud' is a pointer; did you mean to use '->'?
+   67 |                         stud.gpa = gpa;
+      |                             ^
+      |                             ->
+..\project1.c:69:36: error: passing argument 1 of 'addStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 |                         addStudent(&stud);
+      |                                    ^~~~~
+      |                                    |
+      |                                    struct student **
+..\project1.c:5:45: note: expected 'const struct student * const' but argument is of type 'struct student **'
+    5 | void addStudent(const struct student *const ptr);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+..\project1.c: At top level:
+..\project1.c:96:6: error: conflicting types for 'addStudent'; have 'void(const struct student * const)'
+   96 | void addStudent(const struct student *const ptr){
+      |      ^~~~~~~~~~
+..\project1.c:5:6: note: previous declaration of 'addStudent' with type 'void(const struct student * const)'
+    5 | void addStudent(const struct student *const ptr);
+      |      ^~~~~~~~~~
+19:32:54 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c:5:30: warning: 'struct student' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | void addStudent(const struct student *const ptr);
+      |                              ^~~~~~~
+..\project1.c: In function 'main':
+..\project1.c:69:36: error: passing argument 1 of 'addStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 |                         addStudent(&stud);
+      |                                    ^~~~~
+      |                                    |
+      |                                    struct student *
+..\project1.c:5:45: note: expected 'const struct student * const' but argument is of type 'struct student *'
+    5 | void addStudent(const struct student *const ptr);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+..\project1.c: At top level:
+..\project1.c:96:6: error: conflicting types for 'addStudent'; have 'void(const struct student * const)'
+   96 | void addStudent(const struct student *const ptr){
+      |      ^~~~~~~~~~
+..\project1.c:5:6: note: previous declaration of 'addStudent' with type 'void(const struct student * const)'
+    5 | void addStudent(const struct student *const ptr);
+      |      ^~~~~~~~~~
+19:37:06 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:40:18 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:41:07 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:41:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:42:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:42:25 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:44:37 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:44:55 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:46:15 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:46:20 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+19:47:14 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:04:08 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'addStudent':
+..\project1.c:144:16: warning: too many arguments for format [-Wformat-extra-args]
+  144 |         printf("Student added successfully.\n", ptr->id);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o project1.exe project1.o 
+20:06:46 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+20:15:57 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:82:33: error: implicit declaration of function 'calculateAverageGpa' [-Wimplicit-function-declaration]
+   82 |                         avg_gpa=calculateAverageGpa();
+      |                                 ^~~~~~~~~~~~~~~~~~~
+..\project1.c:84:32: warning: too many arguments for format [-Wformat-extra-args]
+   84 |                         printf("The Average GPA is: 0.2f\n",avg_gpa);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20:16:06 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:82:33: error: implicit declaration of function 'calculateAverageGpa'; did you mean 'calculateAverageGPA'? [-Wimplicit-function-declaration]
+   82 |                         avg_gpa=calculateAverageGpa();
+      |                                 ^~~~~~~~~~~~~~~~~~~
+      |                                 calculateAverageGPA
+..\project1.c:84:32: warning: too many arguments for format [-Wformat-extra-args]
+   84 |                         printf("The Average GPA is: 0.2f\n",avg_gpa);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20:24:48 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:82:33: error: implicit declaration of function 'calculateAverageGpa'; did you mean 'calculateAverageGPA'? [-Wimplicit-function-declaration]
+   82 |                         avg_gpa=calculateAverageGpa();
+      |                                 ^~~~~~~~~~~~~~~~~~~
+      |                                 calculateAverageGPA
+20:25:07 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:27:02 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+20:41:29 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:81:25: error: implicit declaration of function 'searchHighestGPA' [-Wimplicit-function-declaration]
+   81 |                         searchHighestGPA();
+      |                         ^~~~~~~~~~~~~~~~
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+..\project1.c: At top level:
+..\project1.c:189:6: warning: conflicting types for 'searchHighestGPA'; have 'void(void)'
+  189 | void searchHighestGPA(void){
+      |      ^~~~~~~~~~~~~~~~
+..\project1.c:81:25: note: previous implicit declaration of 'searchHighestGPA' with type 'void(void)'
+   81 |                         searchHighestGPA();
+      |                         ^~~~~~~~~~~~~~~~
+..\project1.c: In function 'searchHighestGPA':
+..\project1.c:192:15: warning: variable 'max_gpa' set but not used [-Wunused-but-set-variable]
+  192 |         float max_gpa=0;
+      |               ^~~~~~~
+20:41:40 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+..\project1.c: In function 'searchHighestGPA':
+..\project1.c:192:15: warning: variable 'max_gpa' set but not used [-Wunused-but-set-variable]
+  192 |         float max_gpa=0;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+20:42:11 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:45:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:45:28 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:46:32 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+20:48:31 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:48:53 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+20:49:14 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:34:19: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   34 |         float gpa,avg_gpa;
+      |                   ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:10:04 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:10:11 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:12:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:13:31 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:14:17 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:17:04 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:18:16 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:19:01 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:25:59 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:37:13: warning: unused variable 'id_toBeDeleted' [-Wunused-variable]
+   37 |         int id_toBeDeleted, search_id;
+      |             ^~~~~~~~~~~~~~
+..\project1.c:36:15: warning: unused variable 'avg_gpa' [-Wunused-variable]
+   36 |         float avg_gpa;
+      |               ^~~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:32:26 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+21:38:31 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+21:39:37 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:39:42 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+21:57:09 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+22:06:28 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:06:39 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+22:07:38 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+22:11:35 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:13:33 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:13:39 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:15:31 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:15:36 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:18:30 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:18:35 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:20:53 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:22:34 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:22:41 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:25:07 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+22:27:10 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:27:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:28:03 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+22:30:35 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:33:47 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+22:34:37 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+23:07:59 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'displayStudents':
+..\project1.c:183:17: error: 'rightnode' undeclared (first use in this function)
+  183 |                 rightnode=current->next;
+      |                 ^~~~~~~~~
+..\project1.c:183:17: note: each undeclared identifier is reported only once for each function it appears in
+23:08:18 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'displayStudents':
+..\project1.c:183:17: error: 'rightnode' undeclared (first use in this function)
+  183 |                 rightnode=current->next;
+      |                 ^~~~~~~~~
+..\project1.c:183:17: note: each undeclared identifier is reported only once for each function it appears in
+23:09:09 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'displayStudents':
+..\project1.c:182:17: error: 'rightnode' undeclared (first use in this function)
+  182 |                 rightnode=current->next;
+      |                 ^~~~~~~~~
+..\project1.c:182:17: note: each undeclared identifier is reported only once for each function it appears in
+23:09:41 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+23:10:48 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+23:15:02 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+23:16:04 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:16:12 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+13:40:32 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+13:58:15 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:00:20 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+14:04:00 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:04:05 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+14:06:07 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:06:56 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:07:24 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:08:12 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+14:09:03 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:10:48 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:12:04 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+..\project1.c: In function 'main':
+..\project1.c:42:17: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |         {       for(int i=0;i<100;i++);
+      |                 ^~~
+..\project1.c:44:17: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   44 |                 printf("1. Add Student\n");
+      |                 ^~~~~~
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:13:02 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:16:58 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+14:17:15 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:27:20 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:29:19 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+14:38:06 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:40:10 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:42:57 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+14:45:20 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:46:51 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:47:11 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:47:49 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:50:53 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:52:28 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:55:43 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+14:58:55 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+15:01:06 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+15:01:48 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+15:02:35 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+15:07:45 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+23:42:04 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+00:06:24 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:07:37 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+00:08:14 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+00:19:03 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o project1.o "..\\project1.c" 
+gcc -o project1.exe project1.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:19:21 **** Incremental Build of configuration Debug for project project1 ****
+Info: Internal Builder is used for build
+gcc -o project1.exe project1.o 
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
+Info: Nothing to build for project1
