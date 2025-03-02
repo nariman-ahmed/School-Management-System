@@ -1,6 +1,4 @@
-# Student-Management-System
-
-![C](https://img.shields.io/badge/Language-C-blue)  
+# Student-Management-System 
 
 The **Student Management System** is a C-based program designed to efficiently manage student information. It provides a user-friendly interface to perform various operations such as adding, displaying, searching, updating, and analyzing student data. This project demonstrates the use of fundamental programming concepts like conditions, loops, strings, structs, pointers, and data structures (linked lists).
 
