@@ -1,7 +1,5 @@
 # Student-Management-System
 
-# Student Management System
-
 ![C](https://img.shields.io/badge/Language-C-blue)  
 
 The **Student Management System** is a C-based program designed to efficiently manage student information. It provides a user-friendly interface to perform various operations such as adding, displaying, searching, updating, and analyzing student data. This project demonstrates the use of fundamental programming concepts like conditions, loops, strings, structs, pointers, and data structures (linked lists).
@@ -32,21 +30,17 @@ The program is built using core C programming concepts:
 
 ## Demo Video
 
-A demo video showcasing the functionality of the Student Management System is available [here](#) (replace with your video link).
+A demo video showcasing the functionality of the Student Management System is available
+
+### Part 1: Adding, Displaying and Searching for students by ID
+
+https://github.com/user-attachments/assets/58a8d6f1-a479-4801-a3df-f8a3bf5b3861
+
+
+### Part 2: Updating information, Deleting students and finding the average and highest GPA
+
+https://github.com/user-attachments/assets/cb680539-da28-459a-b65d-7b60d8813060
 
 ---
 
-## 📌 Example Usage
-```bash
-1. Add New Student
-2. Display All Students
-3. Search Student by ID
-4. Update Student Details
-5. Calculate Average GPA
-6. Find Student with Highest GPA
-7. Exit
 
-Choose an option: 1
-Enter Student ID: 101
-Enter Name: John Doe
-Enter GPA: 3.8
